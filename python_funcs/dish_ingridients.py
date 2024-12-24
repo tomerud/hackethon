@@ -52,6 +52,7 @@ for dish_id, row in enumerate(df.itertuples(index=False), start=1):  # dish_id s
                     "INSERT INTO dishingredients (dish_id, ingredient_id, quantity_required) VALUES (%s, %s, %s)",
                     (dish_id, ingredient_id, quantity)
                 )
+            print("hello")
 
 # Commit changes and close the connection
 db.commit()
